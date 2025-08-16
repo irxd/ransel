@@ -13,18 +13,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set node LTS
+      - name: Use Node 24.0.2 (npm 11.3+)
         uses: actions/setup-node@v4
         with:
-          node-version: lts/*
-          cache: npm
+          node-version: '24.0.2'
+          cache: 'npm'
 
       - name: Clean install
-        env:
-          NPM_CONFIG_OPTIONAL: 'true'
         run: |
-          rm -rf node_modules
+          rm -rf node_modules package-lock.json
           npm ci
+
+      - name: Build
+        run: npm run build
 
       - name: Test
         run: npm run test
