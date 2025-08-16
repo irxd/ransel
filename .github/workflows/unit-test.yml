@@ -19,8 +19,12 @@ jobs:
           node-version: lts/*
           cache: npm
 
-      - name: Install
-        run: npm install
+      - name: Clean install
+        env:
+          NPM_CONFIG_OPTIONAL: 'true'
+        run: |
+          rm -rf node_modules
+          npm ci
 
       - name: Build
         run: npm run build
