@@ -2,8 +2,12 @@ import { defineConfig } from 'tsdown'
 
 export default defineConfig([
   {
-    entry: ['./src/index.ts'],
-    platform: 'neutral',
-    dts: true,
+    entry: "src/cli.ts",
+    platform: "node",
+    format: "cjs",
+    fixedExtension: true,
+    target: "node18",
+    dts: false, 
+    outDir: "dist",
   },
 ])
