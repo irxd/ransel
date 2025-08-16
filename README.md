@@ -1,23 +1,24 @@
-# tsdown-starter
+<img width="300" height="108" alt="ransel" src="https://github.com/user-attachments/assets/ee17dcfe-f640-498a-a0b7-c049ad093198" />
 
-A starter for creating a TypeScript package.
+My personal dev setup backpack, because I got tired of copy-pasting install commands from docs all the time.
 
-## Development
+## 📝 Why?
 
-- Install dependencies:
+Every package has its own install and config steps.  
+Every time I start a new project, I find myself googling “prettier install”, scrolling to the docs, and copy-pasting the same lines.
 
-```bash
-npm install
-```
+## 📦 Usage
 
-- Run the unit tests:
-
-```bash
-npm run test
-```
-
-- Build the library:
+Show available command:
 
 ```bash
-npm run build
+npx ransel help
 ```
+
+Install and configure prettier:
+
+```bash
+npx ransel prettier
+```
+
+More command coming soon ✨
