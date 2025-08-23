@@ -1,4 +1,15 @@
-<img width="300" height="108" alt="ransel" src="https://github.com/user-attachments/assets/ee17dcfe-f640-498a-a0b7-c049ad093198" />
+```
+                          _  
+                         | | 
+ _ __ __ _ _ __  ___  ___| | 
+| '__/ _` | '_ \/ __|/ _ \ | 
+| | | (_| | | | \__ \  __/ | 
+|_|  \__,_|_| |_|___/\___|_| 
+                                           
+                                                                                   
+
+```
+                             
 
 My personal dev setup backpack, because I got tired of copy-pasting install commands from docs all the time.
 
